@@ -90,11 +90,14 @@ public class StatService {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append("---------КРАТКАЯ СТАТИСТИКА---------");
         stringBuilder.append("\n");
-        stringBuilder.append("Количество записанных целых чисел: "+statistics.getNumOfWritеenInt());
+        stringBuilder.append("Количество записанных целых чисел: ");
+        stringBuilder.append(statistics.getNumOfWritеenInt());
         stringBuilder.append("\n");
-        stringBuilder.append("Количество записанных вещественных чисел: "+statistics.getNumOfWriteenFloat());
+        stringBuilder.append("Количество записанных вещественных чисел: ");
+        stringBuilder.append(statistics.getNumOfWriteenFloat());
         stringBuilder.append("\n");
-        stringBuilder.append("Количество записанных строк: "+statistics.getNumOfWriteenString());
+        stringBuilder.append("Количество записанных строк: ");
+        stringBuilder.append(statistics.getNumOfWriteenString());
         return stringBuilder.toString();
     }
 
@@ -102,37 +105,50 @@ public class StatService {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append("---------ПОЛНАЯ СТАТИСТИКА---------");
         stringBuilder.append("\n");
-        stringBuilder.append("Количество записанных целых чисел: "+statistics.getNumOfWritеenInt());
+        stringBuilder.append("Количество записанных целых чисел: ");
+        stringBuilder.append(statistics.getNumOfWritеenInt());
         stringBuilder.append("\n");
-        stringBuilder.append("Количество записанных вещественных чисел: "+statistics.getNumOfWriteenFloat());
+        stringBuilder.append("Количество записанных вещественных чисел: ");
+        stringBuilder.append(statistics.getNumOfWriteenFloat());
         stringBuilder.append("\n");
-        stringBuilder.append("Количество записанных строк: "+statistics.getNumOfWriteenString());
-        stringBuilder.append("\n");
-        stringBuilder.append("\n");
-
-        stringBuilder.append("Минимальное значение целых чисел: "+statistics.getIntMinValue());
-        stringBuilder.append("\n");
-        stringBuilder.append("Максимальное значение целых чисел: "+statistics.getIntMaxValue());
-        stringBuilder.append("\n");
-        stringBuilder.append("Сумма целых чисел: "+statistics.getIntSum());
-        stringBuilder.append("\n");
-        stringBuilder.append("Среднее целых чисел: "+statistics.getIntAvg());
+        stringBuilder.append("Количество записанных строк: ");
+        stringBuilder.append(statistics.getNumOfWriteenString());
         stringBuilder.append("\n");
         stringBuilder.append("\n");
 
-        stringBuilder.append("Минимальное значение вещественных чисел: "+statistics.getFloatMinValue());
+        stringBuilder.append("Минимальное значение целых чисел: ");
+        stringBuilder.append(statistics.getIntMinValue());
         stringBuilder.append("\n");
-        stringBuilder.append("Максимальное значение вещественных чисел: "+statistics.getFloatMaxValue());
+        stringBuilder.append("Максимальное значение целых чисел: ");
+        stringBuilder.append(statistics.getIntMaxValue());
         stringBuilder.append("\n");
-        stringBuilder.append("Сумма вещественных чисел: "+statistics.getFloatSum());
+        stringBuilder.append("Сумма целых чисел: ");
+        stringBuilder.append(statistics.getIntSum());
         stringBuilder.append("\n");
-        stringBuilder.append("Среднее вещественных чисел: "+statistics.getFloatAvg());
+        stringBuilder.append("Среднее целых чисел: ");
+        stringBuilder.append(statistics.getIntAvg());
         stringBuilder.append("\n");
         stringBuilder.append("\n");
 
-        stringBuilder.append("Размер самой короткой строки: "+statistics.getShortestStringSize());
+        stringBuilder.append("Минимальное значение вещественных чисел: ");
+        stringBuilder.append(statistics.getFloatMinValue());
         stringBuilder.append("\n");
-        stringBuilder.append("Размер самой длинной строки: "+statistics.getLongestStringSize());
+        stringBuilder.append("Максимальное значение вещественных чисел: ");
+        stringBuilder.append(statistics.getFloatMaxValue());
+        stringBuilder.append("\n");
+        stringBuilder.append("Сумма вещественных чисел: ");
+        stringBuilder.append(statistics.getFloatSum());
+        stringBuilder.append("\n");
+        stringBuilder.append("Среднее вещественных чисел: ");
+        stringBuilder.append(statistics.getFloatAvg());
+        stringBuilder.append("\n");
+        stringBuilder.append("\n");
+
+        stringBuilder.append("Размер самой короткой строки: ");
+        stringBuilder.append(statistics.getShortestStringSize());
+        stringBuilder.append("\n");
+        stringBuilder.append("Размер самой длинной строки: ");
+        stringBuilder.append(statistics.getLongestStringSize());
 
         return stringBuilder.toString();
     }
