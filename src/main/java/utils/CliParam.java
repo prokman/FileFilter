@@ -4,6 +4,8 @@ package utils;
 import org.kohsuke.args4j.Argument;
 import org.kohsuke.args4j.Option;
 
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -46,6 +48,10 @@ public class CliParam {
 
     public String getOutputPath() {
         return outputPath;
+    }
+
+    public Path getOutputPathAsPath() {
+        return Paths.get(outputPath).toAbsolutePath();
     }
 
     public String getPrefix() {
