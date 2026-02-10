@@ -28,6 +28,7 @@ public class Main {
             System.err.println("Ошибка в параметрах: " + e.getMessage());
             parser.printUsage(System.err);
         }
+        System.out.println();
         System.out.println("=========END PROGRAM==========");
     }
 }

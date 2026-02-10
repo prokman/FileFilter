@@ -98,6 +98,8 @@ public class StatService {
         stringBuilder.append("\n");
         stringBuilder.append("Количество записанных строк: ");
         stringBuilder.append(statistics.getNumOfWriteenString());
+        stringBuilder.append("\n");
+        stringBuilder.append("---------КРАТКАЯ СТАТИСТИКА---------");
         return stringBuilder.toString();
     }
 
@@ -149,6 +151,8 @@ public class StatService {
         stringBuilder.append("\n");
         stringBuilder.append("Размер самой длинной строки: ");
         stringBuilder.append(statistics.getLongestStringSize());
+        stringBuilder.append("\n");
+        stringBuilder.append("---------ПОЛНАЯ СТАТИСТИКА---------");
 
         return stringBuilder.toString();
     }
